@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Judy Luxe Wellness | Elite US Massage</title>
+<style>
+:root { --accent:#d4af37; --bg:#050505; --card:#111; --text:#ffffff; }
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Times New Roman',serif;}
+body{background:var(--bg);color:var(--text);line-height:1.6;}
+header{padding:25px 5%;display:flex;justify-content:center;background:rgba(0,0,0,0.9);border-bottom:1px solid #222;}
+.logo{font-size:1.6rem;font-weight:900;letter-spacing:5px;color:var(--accent);text-transform:uppercase;}
+.hero{height:45vh;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1544161515-4ae6ce6db874?auto=format&fit=crop&w=1600&q=80') center/cover;}
+section{padding:60px 5%;}
+h2{text-align:center;margin-bottom:40px;font-size:2.2rem;color:var(--accent);text-transform:uppercase;letter-spacing:3px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;}
+.card{background:var(--card);padding:35px;border:1px solid #222;text-align:center;transition:0.4s;}
+.card:hover{border-color:var(--accent); background:#181818;}
+.price{display:block;font-size:1.5rem;margin:15px 0;color:var(--accent);font-weight:bold;}
+.form-container{max-width:700px;margin:0 auto;background:var(--card);padding:40px;border:1px solid #222;border-radius:15px;}
+input,select,textarea{width:100%;padding:14px;margin-bottom:15px;background:#000;border:1px solid #333;color:white;border-radius:5px;font-size:1rem;}
+.btn{background:var(--accent);color:black;padding:18px;border:none;width:100%;font-weight:bold;cursor:pointer;text-decoration:none;display:inline-block;font-size:1rem;text-align:center;text-transform:uppercase;letter-spacing:2px;}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:25px;}
+.email-btn{background:#ffffff;color:black;}
+.review-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px;}
+.review-card{background:rgba(255,255,255,0.02);padding:25px;border-radius:10px;border-left:4px solid var(--accent);font-family:sans-serif;font-style:italic;}
+.whatsapp-float{position:fixed;bottom:25px;right:25px;background:#25D366;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:1000;text-decoration:none;box-shadow:0 10px 20px rgba(0,0,0,0.5);}
+</style>
+</head>
+<body>
+
+<header><div class="logo">JUDY LUXE WELLNESS</div></header>
+
+<section class="hero">
+    <div>
+        <h1>Elite Mobile Therapy</h1>
+        <p style="letter-spacing:2px; font-family:sans-serif;">Luxury Wellness Serving Major US Cities</p>
+    </div>
+</section>
+
+<section id="services">
+    <h2>Signature Treatments</h2>
+    <div class="grid">
+        <div class="card"><h3>Deep Tissue / Trigger Point</h3><p>Advanced release for chronic pain, knots, and athletic recovery.</p><span class="price">$155+</span></div>
+        <div class="card"><h3>Post-Op Lymphatic</h3><p>Specialized drainage to reduce swelling and speed up healing.</p><span class="price">$170+</span></div>
+        <div class="card"><h3>Prenatal / Maternity</h3><p>Safe, restorative care for the unique needs of expecting mothers.</p><span class="price">$145+</span></div>
+        <div class="card"><h3>Sports Recovery Stretch</h3><p>Assisted stretching and percussion therapy for mobility.</p><span class="price">$130+</span></div>
+    </div>
+</section>
+
+<section id="reviews" style="background:#050505;">
+    <h2>Verified Client Trust</h2>
+    <div class="review-grid">
+        <div class="review-card">"Judy is phenomenal. I've had sessions in Manhattan and LA, but her Deep Tissue technique is by far the most effective I've found." — <strong>Mark T., New York</strong></div>
+        <div class="review-card">"Life-changing for my post-op recovery. She was punctual, discreet, and incredibly knowledgeable about lymphatic care." — <strong>Angela D., Miami</strong></div>
+        <div class="review-card">"Finally, a therapist who understands real pressure. She brings the 5-star spa experience directly to your home." — <strong>James L., Houston</strong></div>
+        <div class="review-card">"The convenience of her mobile service is unmatched. Professional, clean, and very intuitive." — <strong>Sarah J., San Francisco</strong></div>
+        <div class="review-card">"Best investment in my health this year. I book her weekly for my sports recovery sessions." — <strong>Michael R., Austin</strong></div>
+        <div class="review-card">"Absolutely professional. My lower back pain was gone after just one session. Highly recommend her Trigger Point work." — <strong>Linda W., Chicago</strong></div>
+    </div>
+</section>
+
+<section id="book">
+    <div class="form-container">
+        <h2>Request Appointment</h2>
+        <form action="https://formspree.io/f/mkoyvwag" method="POST">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <input type="text" name="zip" placeholder="Service Zip Code" required>
+            
+            <select name="location" required>
+                <option value="">Select Service Location</option>
+                <option>Mobile (In-Home Service)</option>
+                <option>Studio Appointment</option>
+            </select>
+
+            <select name="service" required>
+                <option value="">Choose Treatment</option>
+                <option>Deep Tissue / Trigger Point</option>
+                <option>Post-Op Lymphatic</option>
+                <option>Prenatal / Maternity</option>
+                <option>Sports Recovery Stretch</option>
+            </select>
+
+            <input type="date" name="date" required>
+            <textarea name="notes" placeholder="Notes (Injuries, focus areas, or special requests...)"></textarea>
+            
+            <button type="submit" class="btn">Confirm Booking to Email</button>
+        </form>
+
+        <div style="margin-top:30px; text-align:center; padding:15px; border:1px solid #333;">
+            <p style="font-size:0.9rem; color:var(--accent);">Payments accepted via Zelle, CashApp, or Venmo. Deposit required to secure slot.</p>
+        </div>
+
+        <div class="contact-grid">
+            <a href="https://wa.me/12344991665" class="btn">WhatsApp Me</a>
+            <a href="mailto:judychearlie@gmail.com" class="btn email-btn">Email Me</a>
+        </div>
+    </div>
+</section>
+
+<a href="https://wa.me/12344991665" class="whatsapp-float">
+    <span style="font-size:30px;">💬</span>
+</a>
+
+</body>
+</html>
